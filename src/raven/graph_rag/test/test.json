@@ -1,0 +1,35 @@
+[
+  {
+    "EDB-ID": "52296",
+    "size": "36 bytes",
+    "Title": "Linux/x86-64 - execve(\"/bin/sh\") Shellcode (36 bytes)",
+    "Author": "Sayan Ray",
+    "Type": "shellcode",
+    "Platform": "i",
+    "Published": "2025-05-21",
+    "EDB Verified": "✗",
+    "Shellcode Code": "↓"
+  },
+  {
+    "EDB-ID": "52298",
+    "size": "564 bytes",
+    "Title": "Windows 11 x64 - Reverse TCP Shellcode (564 bytes)",
+    "Author": "Victor Huerlimann",
+    "Type": "shellcode",
+    "Platform": "i",
+    "Published": "2025-05-21",
+    "EDB Verified": "✗",
+    "Shellcode Code": "↓"
+  },
+  {
+    "EDB-ID": "51721",
+    "size": "476 bytes",
+    "Title": "Windows/x64 - PIC Null-Free TCP Reverse Shell Shellcode (476 Bytes)",
+    "Author": "Senzee",
+    "Type": "shellcode",
+    "Platform": "i",
+    "Published": "2023-09-08",
+    "EDB Verified": "✗",
+    "Shellcode Code": "↓"
+  }
+]

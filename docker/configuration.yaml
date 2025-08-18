@@ -1,0 +1,31 @@
+init:
+  neo4j:
+    download: 
+      enable: True
+      command: "wget -O {path} {url}'"
+      path: "../data/Neo4j.dump"
+      url: "http://www.example.com/Neo4j20250520.dump"
+    load:
+      command: >
+        docker run --interactive --tty --rm
+        --volume=$HOME/neo4j/data:/data
+        --volume={path}:/backups
+        neo4j/neo4j-admin:5.26.6
+        neo4j-admin database load {database} --from-path=/backups
+      path: "../data"
+      database: neo4j
+
+  app:
+    start: 
+      command: "docker-compose up -d'"
+
+  kafka:
+    topic:
+      name: 
+        - "events"
+        - "pt_events"
+      command: "docker exec -it kafka bash -c '/opt/kafka/bin/kafka-topics.sh --create --topic {topic} --bootstrap-server localhost:9092'"
+      
+running:
+  agent: 
+  web: 

@@ -1,0 +1,34 @@
+[project]
+name = "ai-pentest"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.11.9"
+dependencies = [
+    "beautifulsoup4>=4.13.4",
+    "colorama>=0.4.6",
+    "colorlog>=6.9.0",
+    "defusedxml>=0.7.1",
+    "gradio>=5.39.0",
+    "kafka-python>=2.2.7",
+    "langchain>=0.3.25",
+    "langchain-community>=0.3.24",
+    "langchain-mcp-adapters>=0.1.1",
+    "langchain-milvus>=0.2.1",
+    "langchain-neo4j>=0.4.0",
+    "langchain-openai>=0.3.18",
+    "langgraph>=0.4.7",
+    "pyparsing>=3.2.3",
+    "python-docx>=1.2.0",
+    "python-dotenv>=1.1.0",
+    "pyyaml>=6.0.2",
+    "requests-ntlm>=1.3.0",
+]
+
+[dependency-groups]
+dev = [
+    "mypy>=1.15.0",
+    "pre-commit>=4.2.0",
+    "pytest>=8.3.5",
+    "ruff>=0.11.10",
+]
